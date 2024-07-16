@@ -1,0 +1,661 @@
+:root {
+    --bs-blue: #377dff;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #ed4c78;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #f5ca99;
+    --bs-green: #198754;
+    --bs-teal: #00c9a7;
+    --bs-cyan: #09a5be;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #8c98a4;
+    --bs-gray-dark: #71869d;
+    --bs-gray-100: #f9fafc;
+    --bs-gray-200: #f8fafd;
+    --bs-gray-300: #e7eaf3;
+    --bs-gray-400: #bdc5d1;
+    --bs-gray-500: #97a4af;
+    --bs-gray-600: #8c98a4;
+    --bs-gray-700: #677788;
+    --bs-gray-800: #71869d;
+    --bs-gray-900: #1e2022;
+    --bs-primary: #377dff;
+    --bs-secondary: #71869d;
+    --bs-success: #00c9a7;
+    --bs-info: #09a5be;
+    --bs-warning: #f5ca99;
+    --bs-danger: #ed4c78;
+    --bs-light: #f9fafc;
+    --bs-dark: #132144;
+    --bs-primary-rgb: 55,125,255;
+    --bs-secondary-rgb: 113,134,157;
+    --bs-success-rgb: 0,201,167;
+    --bs-info-rgb: 9,165,190;
+    --bs-warning-rgb: 245,202,153;
+    --bs-danger-rgb: 237,76,120;
+    --bs-light-rgb: 249,250,252;
+    --bs-dark-rgb: 19,33,68;
+    --bs-white-rgb: 255,255,255;
+    --bs-black-rgb: 0,0,0;
+    --bs-body-color-rgb: 103,119,136;
+    --bs-body-bg-rgb: 255,255,255;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: Inter,sans-serif;
+    --bs-body-font-size: 0.875rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #677788;
+    --bs-body-bg: #fff;
+    --bs-border-width: 0.0625rem;
+    --bs-border-style: solid;
+    --bs-border-color: rgba(231, 234, 243, 0.7);
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.5rem;
+    --bs-border-radius-sm: 0.3125rem;
+    --bs-border-radius-lg: 0.75rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: #377dff;
+    --bs-link-hover-color: #1366ff;
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fdf4eb
+}
+
+/* COMPONENT */
+.badge {
+    --bs-badge-padding-x: 0.65em;
+    --bs-badge-padding-y: 0.35em;
+    --bs-badge-font-size: 0.75em;
+    --bs-badge-font-weight: 600;
+    --bs-badge-color: #fff;
+    --bs-badge-border-radius: 0.3125rem;
+    display: inline-block;
+    padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+    font-size: var(--bs-badge-font-size);
+    font-weight: var(--bs-badge-font-weight);
+    line-height: 1;
+    color: var(--bs-badge-color);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: var(--bs-badge-border-radius);
+}
+.badge-primary {
+	background-color: #2196f3;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb),var(--bs-bg-opacity))!important
+}
+
+.bg-secondary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-secondary-rgb),var(--bs-bg-opacity))!important
+}
+
+.bg-success {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-success-rgb),var(--bs-bg-opacity))!important
+}
+
+.bg-info {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-info-rgb),var(--bs-bg-opacity))!important
+}
+
+.bg-warning {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-warning-rgb),var(--bs-bg-opacity))!important
+}
+
+.bg-danger {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-danger-rgb),var(--bs-bg-opacity))!important
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important
+}
+
+.bg-black {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-black-rgb),var(--bs-bg-opacity))!important
+}
+
+.bg-white {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-white-rgb),var(--bs-bg-opacity))!important
+}
+
+.bg-body {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-body-bg-rgb),var(--bs-bg-opacity))!important
+}
+
+.bg-transparent {
+    --bs-bg-opacity: 1;
+    background-color: transparent!important
+}
+
+.bg-opacity-10 {
+    --bs-bg-opacity: 0.1
+}
+
+.bg-opacity-25 {
+    --bs-bg-opacity: 0.25
+}
+
+.bg-opacity-50 {
+    --bs-bg-opacity: 0.5
+}
+
+.bg-opacity-75 {
+    --bs-bg-opacity: 0.75
+}
+
+.bg-opacity-100 {
+    --bs-bg-opacity: 1
+}
+
+.bg-soft-secondary {
+    background-color: rgba(113, 134, 157, .1) !important;
+}
+.text-secondary {
+    --bs-text-opacity: 1;
+    color: rgba(113,134,157,1) !important;
+}
+.bg-soft-info {
+    background-color: rgba(9, 165, 190, .1) !important;
+}
+.text-success {
+    --bs-text-opacity: 1;
+    color: rgba(0, 201, 167, var(--bs-text-opacity)) !important;
+}
+.btn {
+	padding: 1em;
+	background-color: #e7e7e7;
+	font-weight: 600;
+}
+.btn-rounded {
+	border-radius: 100px !important;
+}
+.btn-cover {
+	width: 100% !important;
+}
+.btn-primary {
+	background-color: #2196f3; !important;
+	color: #fff !important;
+}
+.btn-info {
+	background-color: #f0f8ff !important;
+	color: #358fde !important;
+	border-color: #358fde !important;
+}
+
+
+body{
+	font-family: "Poppins", sans-serif !important;
+}
+.pages-title{
+	color: #fff;
+	font-weight: 600;
+}
+.bottom-nav-link {
+	display: flex;
+	/* Use flexbox for layout */
+	flex-direction: column;
+	/* Stack items vertically */
+	align-items: center;
+	/* Center items horizontally */
+	justify-content: center;
+	/* Center items vertically */
+	text-align: center;
+	/* Center text within the link */
+	text-decoration: none;
+	/* Remove default underline */
+	color: inherit;
+	/* Inherit text color */
+}
+
+.bottom-nav-icon {
+	width: 32px;
+	/* Adjust width of the icon */
+	height: 32px;
+	/* Adjust height of the icon */
+}
+
+.bottom-nav-title {
+	margin-top: 8px;
+	/* Optional: Adjust spacing between icon and text */
+	font-size: 14px;
+	/* Adjust font size of the text */
+}
+
+.card-home {
+	box-shadow: #959da533 0px 8px 24px;
+	padding: 10px;
+	background-color: aliceblue;
+	border: 2px solid #a1c7e8;
+	text-align: center;
+	border-radius: 30px;
+}
+.dashboard-btn-absence {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	border: none;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	/* Menjadikan container sebagai flex column */
+	align-items: center;
+	/* Menengahkan konten secara horizontal */
+	justify-content: center;
+	/* Menengahkan konten secara vertikal */
+}
+
+.card-home .card-title {
+	text-align: center;
+	font-weight: 600;
+}
+
+.card-home img {
+	max-width: 50%;
+	/* Memastikan gambar tidak melebihi lebar parent */
+}
+
+.photo-preview {
+	width: 100%;
+	min-height: 400px;
+	object-fit: cover;
+    border-radius: 10px !important;
+}
+
+.action-btns {
+	margin-top: 10px;
+	width: 100%;
+}
+.card-home-day {
+	text-align: center;
+	margin: 0.5em auto -20px;
+	background-color: aliceblue;
+	border-radius: 20px;
+	padding: 0.5em 2em;
+	font-weight: 600;
+	border: 1px solid #a1c7e8;
+	color: #358fde;
+	display: inline-block;
+}
+.card-home-time {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 5em;
+	color: #005baa;
+}
+
+.poppins-thin {
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.poppins-extralight {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.poppins-light {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.poppins-regular {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.poppins-medium {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.poppins-semibold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.poppins-bold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.poppins-extrabold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+.poppins-black {
+	font-family: "Poppins", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.poppins-thin-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.poppins-extralight-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: italic;
+}
+
+.poppins-light-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.poppins-regular-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.poppins-medium-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.poppins-semibold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.poppins-bold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.poppins-extrabold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	font-style: italic;
+}
+
+.poppins-black-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
+.title {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	color: grey;
+}
+.last-activity {
+}
+.last-activity-item {
+	border-bottom: 2px solid #f0f8ff;
+}
+.last-activity-item-top {
+	padding: 0.5em 0;
+	overflow: hidden;
+}
+.last-activity-item-date {
+	font-weight: 600;
+	float: left;
+	color: #005baa;
+}
+.last-activity-item-time {
+	font-weight: 600;
+	float: right;
+	color: #005baa;
+}
+.last-activity-item-time i,
+.last-activity-item-date i {
+	font-weight: 600;
+	color: #a1c7e8;
+}
+.last-activity-item-main {
+	padding: 0 0 0.3em 0;
+}
+.last-activity-item-main h3 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	color: grey;
+}
+.last-activity-item-bottom {
+	overflow: hidden;
+	text-align: left;
+	padding: 0 0 0.7em;
+}
+
+/* HALAMAN ABSEN */
+.absence-map{
+    width: 100%;
+    height: 250px;
+    background-color: #f0f8ff;
+    border-radius: 20px;
+}
+.absence-location {
+    width: 80%;
+    max-width: 400px; /* Atur lebar maksimum sesuai kebutuhan */
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 320px; /* Posisikan di tengah vertikal */
+    transform: translateY(-50%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 10px;
+    font-size: 0.8em;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Menempatkan elemen ikon dan teks di kedua sisi */
+    align-items: center; /* Memusatkan secara vertikal jika diperlukan */
+}
+
+.absence-location-icon {
+    color: #2196f3;
+    font-size: 2em;
+}
+
+.absence-location-text {
+    flex: 1; /* Memungkinkan teks untuk memanjang sepanjang tersedia */
+    padding-left: 10px; /* Jarak antara ikon dan teks */
+}
+.btn-absen{
+    border-radius: 15px;
+    padding: 2em 0 !important;
+}
+.btn-absen i{
+    font-size: 1.5em;
+}
+.btn-absen-2{
+    border-radius: 15px;
+}
+.absence-radio-container {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	width: 100%;
+	margin-top: 35%;
+}
+.absence-radio-container input[type="radio"] {
+	display: none;
+}
+.absence-radio-container label {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	padding: 10px;
+	margin: 5px 0;
+	border: 2px solid #ccc;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 250ms ease;
+	font-weight: 600;
+	background-color: #f0f0f0;
+	position: relative;
+	font-family: "Poppins", sans-serif;
+	color: #7a7a7a;
+}
+.absence-radio-container input[type="radio"]:checked + label {
+	background-color: #f0f8ff;
+	border-color: #358fde;
+	color: #358fde;
+}
+.absence-radio-container input[type="radio"]:checked + label i {
+	display: block;
+	animation: slideDown 0.3s ease;
+}
+.absence-radio-container label i {
+	display: none;
+	font-size: 2em;
+	color: #358fde;
+}
+.absence-radio-container label span {
+	font-size: 1.2em;
+	user-select: none;
+	transition: color 0.3s ease;
+}
+.absence-radio-container input[type="radio"]:checked + label span {
+	color: #358fde;
+}
+
+@keyframes slideDown {
+	from {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/* Media query to keep buttons side by side on small screens */
+@media (max-width: 600px) {
+	.absence-radio-container {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+}
+
+.absence-upload-container {
+	background-color: #f0f0f0; /* background same as unselected radio button */
+	border: 4px dashed #ccc; /* thicker border */
+	border-radius: 20px; /* increased border radius */
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+}
+.absence-upload-container i {
+	font-size: 4em;
+	color: #7a7a7a; /* color same as unselected text */
+}
+.absence-upload-container p {
+	margin: 0 0 30px 0; /* increased margin bottom to prevent overlap */
+	font-size: 1em;
+	color: #7a7a7a; /* color same as unselected text */
+}
+.absence-upload-container input[type="file"] {
+	display: none;
+}
+.absence-file-card {
+	background-color: #fff;
+	border-radius: 20px;
+	width: 100%;
+	max-width: 400px;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.absence-file-card .file-details {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.absence-file-card .file-icon {
+	background-color: #f0f8ff;
+	border-radius: 10px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	color: #358fde;
+	margin-right: 20px;
+}
+.absence-file-card .file-name {
+	flex: 1;
+	color: #333;
+	font-weight: bold;
+}
+.absence-file-card .file-size {
+	color: #666;
+	font-size: 0.9em;
+}
+.absence-file-card button, .absence-upload-container  button {
+	padding: 5px 0 !important;
+}
+.absence-file-card button:hover {
+}
+.absence-textarea{
+	width: 100%;
+	background-color: #fafdff;
+	border: 1px solid #8cc7e3;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+/* HALAMAN HISTORY */
+#history-filter{
+	text-align: center;
+	background-color: aliceblue;
+	color: #2196F3;
+	padding: 0.5em 1em;
+	font-size: 1.2em;
+	border-radius: 20px;
+	border: 1px solid #2196F3;
+}
+#history-filter:hover{
+	cursor: pointer;
+}
